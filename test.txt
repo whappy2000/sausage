@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+asd3adfas
+2
+3
+4
+5
+6
+=======
+branch2 test2
+>>>>>>> Test2
+7
