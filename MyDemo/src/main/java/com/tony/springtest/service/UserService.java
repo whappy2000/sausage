@@ -1,5 +1,7 @@
 package com.tony.springtest.service;
 
+import java.util.List;
+
 import com.tony.springtest.entity.User;
 
 public interface UserService {
@@ -9,6 +11,7 @@ public interface UserService {
 
     User findUserById(Integer id);
     
+    List<User> findByName(String name);
 
     void updateUser(User user);
 

@@ -1,5 +1,7 @@
 package com.tony.springtest.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -46,5 +48,11 @@ public class UserServiceImpl implements UserService{
     public void deleteUserById(Integer id) {
         userRepository.delete(id);
     }
+
+	@Override
+	public List<User> findByName(String name) {
+		// TODO Auto-generated method stub
+		return userRepository.findByName(name);
+	}
 
 }

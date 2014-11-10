@@ -1,5 +1,6 @@
 package com.tony.springtest.controller;
 
+import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -30,9 +31,9 @@ public class LoginController {
 	public String login(Locale locale, Model model) {
 		logger.info("Show login.jsp", locale);
 
-		User u = userService.findUserById(1);
-		
-		logger.info("Show login.jsp", u.getAccout());
+		//User u = userService.findUserById(1);
+		List<User> users = userService.findByName("test");
+		//logger.info("Show login.jsp", u.getAccout());
 		return "login";
 	}
 	
