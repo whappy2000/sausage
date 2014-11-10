@@ -13,7 +13,7 @@ public class User {
     private Integer id;
     
     
-    private String accout;
+    private String account;
     
    
     private String name;
@@ -30,11 +30,11 @@ public class User {
 	}
 
 	public String getAccout() {
-		return accout;
+		return account;
 	}
 
-	public void setAccout(String accout) {
-		this.accout = accout;
+	public void setAccout(String account) {
+		this.account = account;
 	}
 
 	public String getName() {
